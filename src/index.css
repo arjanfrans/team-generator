@@ -22,7 +22,7 @@ td {
 }
 
 .wrapper {
-    width: 800px;
+    max-width: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
