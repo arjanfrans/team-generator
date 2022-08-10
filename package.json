@@ -1,0 +1,51 @@
+{
+  "name": "team-generator",
+  "version": "0.0.2",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.19.9",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.10",
+    "events": "^3.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "3.4.3",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:production": "npm run build && serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -f -d build",
+    "cs-fix": "eslint src --ext ts,tsx",
+    "cs-format": "prettier 'src/**/*.ts' --write --no-semi --tab-width 4 --print-width=120",
+    "cs": "npm run cs-format && npm run cs-fix"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.2.1",
+    "serve": "^11.3.2"
+  }
+}

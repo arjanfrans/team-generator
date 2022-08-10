@@ -1,0 +1,28 @@
+.member {
+    color: red;
+}
+
+.guest {
+    color: blue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 4px;
+    border-color: black;
+}
+
+.wrapper {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
